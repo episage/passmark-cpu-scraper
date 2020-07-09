@@ -6,7 +6,7 @@ var { Parser } = require('json2csv');
 var { DateTime } = require('luxon');
 
 app.get('/', async function (req, res) {
-	var url = 'http://www.cpubenchmark.net/CPU_mega_page.html';
+	var url = 'https://www.cpubenchmark.net/CPU_mega_page.html';
 	var cpuData = [];
 
 	request(url, function (error, response, html) {
